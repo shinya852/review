@@ -8,5 +8,7 @@ Rails.application.routes.draw do
   #今回は画像投稿に対してコメントをつけるのでpost_image直下に作成
     resources :post_comments, only: [:create, :destroy]
   end
+  resources :users, only: [:show, :edi, :update]
+
 
 end
